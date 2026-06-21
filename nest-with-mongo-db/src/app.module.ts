@@ -6,9 +6,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { StudentModule } from './student/student.module';
 import { UserModule } from './user/user.module';
 import { EmployeeModule } from './employee/employee.module';
+import { ProductModule } from './product/product.module';
+import { LibraryModule } from './library/library.module';
+import { ProjectModule } from './project/project.module';
 
 @Module({
-  imports: [ ConfigModule.forRoot({ isGlobal: true }), MongooseModule.forRoot(process.env.DB_URL!), StudentModule, UserModule, EmployeeModule],
+  imports: [ ConfigModule.forRoot({ isGlobal: true }), MongooseModule.forRoot(process.env.DB_URL!), StudentModule, UserModule, EmployeeModule, ProductModule, LibraryModule, ProjectModule],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -45,3 +45,8 @@
     }
     ```     
 
+## Types of Relationships in MongoDB:
+
+1. one-to-one relationship: A single document is related to another single document. For example, a user profile and its corresponding user account.
+2. one-to-many relationship: A single document is related to multiple documents. For example, a blog post can have multiple comments.
+3. many-to-many relationship: Multiple documents are related to multiple documents. For example, students and courses, where a student can enroll in multiple courses and a course can have multiple students.
